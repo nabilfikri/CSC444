@@ -1,4 +1,4 @@
-package SimpleExample;
+package simpleexample;
 
 class Pet {
 	private String name;

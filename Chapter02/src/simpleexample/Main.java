@@ -1,4 +1,4 @@
-package SimpleExample;
+package simpleexample;
 
 public class Main {
 	public static void main(String[] args) {
@@ -14,6 +14,10 @@ public class Main {
 		
 		System.out.println();
 		
+		//Invalid declarations
+//		Cat c = new Pet();
+//		Dog d = new Pet();
+		
 		Pet p = new Cat();
 		p.setName("Oren");
 		
@@ -25,17 +29,13 @@ public class Main {
 		p.setName("Gray");
 		System.out.println("Dog name: " + p.getName());
 		System.out.println(p2.speak());
-		
-		//Invalid declarations
-//		Cat c = new Pet();
-//		Dog d = new Pet();
+		System.out.println();
 		
 		//Invalid method calls
-//		p.fetch(); // no method fetch defined in class Pet
+//		p2.fetch(); // no method fetch defined in class Pet
 		
 		//to overcome, do casting
 		Dog d = (Dog) p2;
-		System.out.println();
 		System.out.println(d.fetch());;
 	}
 }

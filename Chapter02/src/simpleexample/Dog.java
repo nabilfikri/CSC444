@@ -1,4 +1,4 @@
-package SimpleExample;
+package simpleexample;
 
 class Dog extends Pet {
 	public String fetch( ) {
