@@ -26,7 +26,7 @@ public class Main {
 		System.out.println();
 		
 		Pet p2 = new Dog();
-		p.setName("Gray");
+		p2.setName("Gray");
 		System.out.println("Dog name: " + p.getName());
 		System.out.println(p2.speak());
 		System.out.println();
