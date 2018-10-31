@@ -52,21 +52,29 @@ public class RegistrationWithCookies extends HttpServlet {
 			Cookie cookieLastName = new Cookie("lastName", lastName);
 			// cookieLastName.setMaxAge(1000);
 			response.addCookie(cookieLastName);
+			
 			Cookie cookieFirstName = new Cookie("firstName", firstName);
 			response.addCookie(cookieFirstName);
 			// cookieFirstName.setMaxAge(0);
+			
 			Cookie cookieMi = new Cookie("mi", mi);
 			response.addCookie(cookieMi);
+			
 			Cookie cookieTelephone = new Cookie("telephone", telephone);
 			response.addCookie(cookieTelephone);
+			
 			Cookie cookieEmail = new Cookie("email", email);
 			response.addCookie(cookieEmail);
+			
 			Cookie cookieStreet = new Cookie("street", street);
 			response.addCookie(cookieStreet);
+			
 			Cookie cookieCity = new Cookie("city", city);
 			response.addCookie(cookieCity);
+			
 			Cookie cookieState = new Cookie("state", state);
 			response.addCookie(cookieState);
+			
 			Cookie cookieZip = new Cookie("zip", zip);
 			response.addCookie(cookieZip);
 

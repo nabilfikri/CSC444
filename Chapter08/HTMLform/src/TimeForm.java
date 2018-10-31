@@ -70,8 +70,10 @@ public class TimeForm extends HttpServlet {
 		response.setContentType(CONTENT_TYPE);
 		PrintWriter out = response.getWriter();
 		out.println("<html>");
+		
 		int localeIndex = Integer.parseInt(request.getParameter("locale"));
 		String timeZoneID = request.getParameter("timezone");
+		
 		out.println("<head><title>Current Time</title></head>");
 		out.println("<body>");
 		Calendar calendar = new GregorianCalendar(allLocale[localeIndex]);
